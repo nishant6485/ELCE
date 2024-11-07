@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+        }
+
+        .joke-container {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            
+        }
+
+        .joke-display {
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            min-height: 60px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .get-joke {
+            background-color: #28a745;
+        }
+
+        .get-joke:hover {
+            background-color: #218838;
+        }
+
+        .clear-joke {
+            background-color: #dc3545;
+        }
+
+        .clear-joke:hover {
+            background-color: #c82333;
+        }
+
+        .character-count {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="joke-container">
+        <h1>Random Joke Generator</h1>
+        <div class="joke-display">
+            Press the button for a joke!
+        </div>
+        <p class="character-count">Character count: 0</p>
+        <div class="button-container">
+            <button class="get-joke">Get Joke</button>
+            <button class="clear-joke">Clear Joke</button>
+        </div>
+    </div>
+</body>
+</html>
